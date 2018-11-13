@@ -812,6 +812,14 @@ func (c *CheckSuite) GetNodeID() string {
 	return *c.NodeID
 }
 
+// GetPullRequests returns the PullRequests field.
+func (c *CheckSuite) GetPullRequests() []*PullRequest {
+	if c == nil {
+		return nil
+	}
+	return c.PullRequests
+}
+
 // GetRepository returns the Repository field.
 func (c *CheckSuite) GetRepository() *Repository {
 	if c == nil {
